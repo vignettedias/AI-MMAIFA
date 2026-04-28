@@ -1,62 +1,58 @@
-# 🧠 MMAIFA — Deepfake Detection System
+# MMAIFA – Deepfake Detection Algorithm
 
-## 📌 Overview
+## Introduction
 
-**MMAIFA (Multi-Modal AI Inference & Framework Architecture)** is a modular system designed to detect deepfake and synthetic media. It analyzes images, videos, and metadata using AI models to determine authenticity and generate confidence-based results.
-
----
-
-## 🚀 How It Works (Step-by-Step)
-
-### 1️⃣ Input Acquisition
-- User uploads:
-  - Image (JPEG, PNG)
-  - Video (optional)
-- System validates file format and size
+**MMAIFA (Multi-Modal AI Inference & Framework Architecture)** is an adaptable framework that uses Artificial Intelligence models to analyze images and videos to detect deepfake content.
 
 ---
 
-### 2️⃣ Preprocessing
+## Working Process (Step-by-Step)
+
+### Step 1: Data Acquisition
+- **Input data** includes:
+  - Images (in JPEG, PNG format)
+  - Videos (optional)
+- File validation process checks image or video:
+
+---
+
+### Step 2: Preprocessing Stage
 - Image resizing and normalization
 - Face detection and alignment
-- Video → frame extraction (if applicable)
-- Noise and artifact isolation
+- Frame extraction from the video (if available)
+- Isolating noise/artifacts
 
 ---
 
-### 3️⃣ Feature Extraction
-- Facial landmarks detection
-- Texture and pixel pattern analysis
-- Frequency-domain transformation (FFT)
-- Metadata extraction (EXIF, timestamps)
+### Step 3: Feature Extraction
+- Identification of facial landmarks
+- Texture analysis and pixel pattern recognition
+- Transforming to frequency domain (using FFT)
+- Extraction of metadata (EXIF, timestamps)
 
 ---
 
-### 4️⃣ AI Inference
-- Input passed to trained models:
-  - CNN / Vision Transformer
+### Step 4: AI Inference
+- Sending preprocessed input to the AI model:
+  - Convolutional Neural Networks (CNNs)
+  - Vision Transformers
 - Detects:
-  - GAN artifacts
+  - GAN-related artifacts
   - Facial inconsistencies
-  - Synthetic patterns
-- Outputs probability score
+  - Synthesized features
+- Probability output
 
 ---
 
-### 5️⃣ Validation Layer
-- Cross-check results from multiple models
-- Apply threshold rules
-- Generate confidence score
+### Step 5: Validation
+- Comparison of results from different models
+- Threshold implementation
+- Calculating confidence level
 
 ---
 
-### 6️⃣ Output Generation
-- Final classification:
-  - ✅ Real
-  - ⚠️ Deepfake
-- Confidence score (e.g., 91%)
-- Optional: highlight suspicious regions
-
----
-
-## 🧱 Architecture
+### Step 6: Results Output
+- Final decision made between:
+  - Real
+  - Fake
+- Confidence level
