@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "feature_names": [
+    "pixel_efficientnet",
+    "pixel_alexnet",
+    "pixel_googlenet",
+    "pixel_ensemble",
+    "forensic_ela",
+    "forensic_fft",
+    "forensic_noise",
+    "forensic_ensemble",
+    "semantic_anomaly"
+  ],
+  "examples": [
+    {
+      "id": "e6e09351-6004-4ec8-ab2b-5308a49404b1",
+      "image_hash": "be660dc5fdba9dd30a23c907336b7d52dc79ee3f4d91af96162e3f2013fb824b",
+      "label": 1,
+      "label_name": "FAKE",
+      "features": [
+        0.120939,
+        0.12111,
+        0.120786,
+        0.120945,
+        0.026516,
+        0.582674,
+        0.487148,
+        0.365446,
+        0.724227
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to FAKE",
+      "created_at": 1777366708.6247954,
+      "updated_at": 1777366917.6713564
+    },
+    {
+      "id": "282475f7-ad9b-4da9-b33c-3bbdc3f363e9",
+      "image_hash": "auth-check",
+      "label": 1,
+      "label_name": "FAKE",
+      "features": [
+        0.0,
+        0.0,
+        0.0,
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "user_feedback",
+      "note": "",
+      "created_at": 1777367037.138613,
+      "updated_at": 1777367037.1386132
+    },
+    {
+      "id": "89ab333c-1019-4722-b953-0724860c8c4d",
+      "image_hash": "174661858bc890a7a040b959d858c86a072ab5b3915f43f2c5efbf824dcd2e71",
+      "label": 1,
+      "label_name": "FAKE",
+      "features": [
+        0.165587,
+        0.16567,
+        0.16547,
+        0.165576,
+        0.029318,
+        0.678393,
+        0.513088,
+        0.406933,
+        0.606569
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to FAKE",
+      "created_at": 1777367299.4678473,
+      "updated_at": 1777367299.4678478
+    },
+    {
+      "id": "54aefc08-089b-4606-8b91-11d2d8145e67",
+      "image_hash": "868462628d3460d3427ecf85550ccd5a36823fa8105600f4909cff1b0adae055",
+      "label": 1,
+      "label_name": "FAKE",
+      "features": [
+        0.080232,
+        0.08028,
+        0.079992,
+        0.080168,
+        0.052341,
+        0.795623,
+        0.637265,
+        0.495076,
+        0.32074
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to FAKE",
+      "trust": 1.0,
+      "allow_exact_override": true,
+      "created_at": 1777367538.1672783,
+      "updated_at": 1777367545.801469
+    },
+    {
+      "id": "b7201a10-34ff-4585-ba5d-7ab6949f07a0",
+      "image_hash": "30373b2cbde6c45b56b9b8aea9868396f245f0d1232ce49de2781b5a15c82c2f",
+      "label": 0,
+      "label_name": "REAL",
+      "features": [
+        0.135194,
+        0.135368,
+        0.135023,
+        0.135195,
+        0.049869,
+        0.733955,
+        0.64847,
+        0.477431,
+        0.244486
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to REAL",
+      "trust": 1.0,
+      "allow_exact_override": true,
+      "created_at": 1777367601.323642,
+      "updated_at": 1777367612.262616
+    },
+    {
+      "id": "a8742dc3-d608-4c1a-aa48-967a46bdf66f",
+      "image_hash": "94ed03cc0f9a76070c579c45cfc2b4515f39422b371509f952ad22c5babe0433",
+      "label": 0,
+      "label_name": "REAL",
+      "features": [
+        0.085369,
+        0.08541,
+        0.085252,
+        0.085343,
+        0.017754,
+        0.70442,
+        0.338637,
+        0.353604,
+        0.296193
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to REAL",
+      "trust": 1.0,
+      "allow_exact_override": true,
+      "created_at": 1777367646.3413453,
+      "updated_at": 1777367646.3413458
+    },
+    {
+      "id": "cb19ee04-7dd2-410c-b2b2-69d921945809",
+      "image_hash": "00645b4045b5d6608e2fff354ab4e11941f9f7399b81c17a69d9c84d3f9a1752",
+      "label": 0,
+      "label_name": "REAL",
+      "features": [
+        0.301765,
+        0.302122,
+        0.300758,
+        0.301548,
+        0.042679,
+        0.751616,
+        0.594327,
+        0.462874,
+        0.062253
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to REAL",
+      "trust": 1.0,
+      "allow_exact_override": true,
+      "created_at": 1777367789.597416,
+      "updated_at": 1777367789.5974162
+    },
+    {
+      "id": "6aff951e-abdd-4776-ae35-af45a6b039f5",
+      "image_hash": "fff78e111421342248dea43d4d7aed91ee08e87d1a2f5094ad4368e9648ed71e",
+      "label": 0,
+      "label_name": "REAL",
+      "features": [
+        0.197789,
+        0.197953,
+        0.197275,
+        0.197672,
+        0.055461,
+        0.744159,
+        0.366003,
+        0.388541,
+        0.137807
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to REAL",
+      "trust": 1.0,
+      "allow_exact_override": true,
+      "created_at": 1777367823.9712696,
+      "updated_at": 1777367823.9712698
+    },
+    {
+      "id": "e57b1ee2-a23c-4912-a8e8-6443d7f3e627",
+      "image_hash": "1a2a1589ef14b6440be85dbcdfb7291a229aba94c743fd919f8e1c3978e982d3",
+      "label": 0,
+      "label_name": "REAL",
+      "features": [
+        0.109964,
+        0.110083,
+        0.109832,
+        0.10996,
+        0.013069,
+        0.642565,
+        0.636222,
+        0.430619,
+        0.568492
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to REAL",
+      "trust": 1.0,
+      "allow_exact_override": true,
+      "created_at": 1777367876.0719438,
+      "updated_at": 1777367876.071944
+    },
+    {
+      "id": "6a8e01cf-ab80-4f98-84c3-5c85e5531502",
+      "image_hash": "a1f4594913ce71e135daf80c8337211b5f738b9d00349eaf309d530a566c0034",
+      "label": 0,
+      "label_name": "REAL",
+      "features": [
+        0.19897121749597194,
+        0.19930975621169236,
+        0.19834473019505186,
+        0.19887523463423873,
+        0.016139072751632233,
+        0.7379052248896745,
+        0.4258906921219592,
+        0.39331166325442196,
+        0.09621186863379876
+      ],
+      "source": "auto_confident_prediction",
+      "note": "Auto-learned from high-confidence prediction (74.38%).",
+      "trust": 0.25,
+      "allow_exact_override": false,
+      "created_at": 1777367884.165905,
+      "updated_at": 1777367884.1659055
+    },
+    {
+      "id": "8a969cb4-1d0b-4904-9b12-328827e69599",
+      "image_hash": "2b9f9695907164fe0ffaca4917aac66f12aa01e82a11a6e865d910507d206974",
+      "label": 0,
+      "label_name": "REAL",
+      "features": [
+        0.073363,
+        0.073408,
+        0.073308,
+        0.07336,
+        0.032395,
+        0.613783,
+        0.431802,
+        0.359327,
+        0.426582
+      ],
+      "source": "user_feedback",
+      "note": "User corrected prediction to REAL",
+      "trust": 1.0,
+      "allow_exact_override": true,
+      "created_at": 1777367906.776865,
+      "updated_at": 1777367907.135271
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "model_name": "efficientnet",
+  "backend": "heuristic_trained",
+  "feature_names": [
+    "texture_density",
+    "smoothness",
+    "entropy",
+    "saturation",
+    "channel_imbalance",
+    "edge_uniformity",
+    "blockiness"
+  ],
+  "weights": [
+    0.5570276831872347,
+    -0.6885724545557724,
+    1.5010391238556713,
+    4.291638996567085,
+    -1.1486923588433973,
+    -1.265888264306586,
+    0.07082093968073279
+  ],
+  "bias": -2.8839818950283593
+}

@@ -1,0 +1,26 @@
+{
+  "backend": "xgboost",
+  "feature_names": [
+    "pixel_efficientnet",
+    "pixel_alexnet",
+    "pixel_googlenet",
+    "pixel_ensemble",
+    "forensic_ela",
+    "forensic_fft",
+    "forensic_noise",
+    "forensic_ensemble",
+    "semantic_anomaly"
+  ],
+  "weights": [
+    0.4948454201221466,
+    0.4673539698123932,
+    0.4810996651649475,
+    0.6185567378997803,
+    0.35738831758499146,
+    0.3298969268798828,
+    0.34364262223243713,
+    0.4810996651649475,
+    0.42611685395240784
+  ],
+  "bias": -3.2126652896404266
+}
