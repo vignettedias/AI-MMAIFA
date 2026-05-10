@@ -1,58 +1,70 @@
-# MMAIFA – Deepfake Detection Algorithm
+# AI Image Authenticity Detector
 
-## Introduction
+Multi-stream real-vs-AI image verification system with:
 
-**MMAIFA (Multi-Modal AI Inference & Framework Architecture)** is an adaptable framework that uses Artificial Intelligence models to analyze images and videos to detect deepfake content.
+- Pixel ensemble: EfficientNet, AlexNet, GoogLeNet
+- Forensics: ELA, FFT, noise, compression, spectral intelligence, camera provenance, manipulation, metadata
+- Semantic reasoning: CLIP when enabled, deterministic fallback otherwise
+- Synthetic landscape/render cue for fantasy nature scenes
+- Synthetic architecture/render cue for generated buildings and plazas
+- OOD, uncertainty, reliability, and human-review policy outputs
+- Feature fusion and XGBoost/weighted meta-classifier
+- Creator-only correction memory plus conservative auto-learning
+- React frontend connected to the FastAPI backend
 
----
+## Run Backend
 
-## Working Process (Step-by-Step)
+```powershell
+cd "D:\Semester 3\CAO\CAO Patent Implementation"
+$env:AUTH_ADMIN_KEY="creator-admin-key"
+python -m uvicorn api.app:app --host 127.0.0.1 --port 8000
+```
 
-### Step 1: Data Acquisition
-- **Input data** includes:
-  - Images (in JPEG, PNG format)
-  - Videos (optional)
-- File validation process checks image or video:
+## Run Frontend
 
----
+```powershell
+cd "D:\Semester 3\CAO\CAO Patent Implementation\frontend"
+npm run dev -- --host 127.0.0.1 --port 5173
+```
 
-### Step 2: Preprocessing Stage
-- Image resizing and normalization
-- Face detection and alignment
-- Frame extraction from the video (if available)
-- Isolating noise/artifacts
+Open:
 
----
+```text
+http://127.0.0.1:5173
+```
 
-### Step 3: Feature Extraction
-- Identification of facial landmarks
-- Texture analysis and pixel pattern recognition
-- Transforming to frequency domain (using FFT)
-- Extraction of metadata (EXIF, timestamps)
+## CLI Prediction
 
----
+```powershell
+python main.py predict --image "SampleImage\testIm5.jpeg" --compact
+```
 
-### Step 4: AI Inference
-- Sending preprocessed input to the AI model:
-  - Convolutional Neural Networks (CNNs)
-  - Vision Transformers
-- Detects:
-  - GAN-related artifacts
-  - Facial inconsistencies
-  - Synthesized features
-- Probability output
+## Train
 
----
+```powershell
+python main.py train --data-dir data/cifake
+python main.py train-meta --data-dir data/cifake
+python main.py train-pixel --model all --data-dir data/cifake
+```
 
-### Step 5: Validation
-- Comparison of results from different models
-- Threshold implementation
-- Calculating confidence level
+## Admin Feedback
 
----
+Only the creator/admin can teach the memory learner. The frontend correction panel sends feedback with the `X-Admin-Key` header.
 
-### Step 6: Results Output
-- Final decision made between:
-  - Real
-  - Fake
-- Confidence level
+Default local key:
+
+```text
+creator-admin-key
+```
+
+Check memory stats:
+
+```powershell
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/memory/stats" -Headers @{"X-Admin-Key"="creator-admin-key"}
+```
+
+Check human-review queue:
+
+```powershell
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/review/queue" -Headers @{"X-Admin-Key"="creator-admin-key"}
+```
