@@ -1,0 +1,32 @@
+name: "mmaifa_fusion_transformer"
+platform: "onnxruntime_onnx"
+max_batch_size: 32
+input [
+  {
+    name: "features"
+    data_type: TYPE_FP32
+    dims: [ -1 ]
+  }
+]
+output [
+  {
+    name: "authenticity_logits"
+    data_type: TYPE_FP32
+    dims: [ 5 ]
+  },
+  {
+    name: "uncertainty"
+    data_type: TYPE_FP32
+    dims: [ 4 ]
+  }
+]
+dynamic_batching {
+  preferred_batch_size: [ 4, 8, 16, 32 ]
+  max_queue_delay_microseconds: 5000
+}
+instance_group [
+  {
+    kind: KIND_GPU
+    count: 1
+  }
+]

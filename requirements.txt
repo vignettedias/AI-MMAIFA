@@ -1,0 +1,13 @@
+pillow>=10.0
+numpy>=1.26
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+xgboost>=2.0
+pytest>=8.0
+httpx>=0.27
+
+# Optional heavy backends for production-grade pixel and semantic streams:
+# torch
+# torchvision
+# transformers

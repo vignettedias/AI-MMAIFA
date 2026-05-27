@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+.codex_deps/
+
+# Logs
+*.log
+logs/*.png
+
+# Model/runtime artifacts
+models/*.json
+models/*.pt
+models/*.pkl
+models/*.joblib
+!models/README.md
+
+# Local demo/generated data
+data/demo_single/
+data/demo_training/
+SampleImage/
+patent_text_tmp.txt
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
