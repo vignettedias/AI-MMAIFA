@@ -1,0 +1,23 @@
+{
+  "model_name": "googlenet",
+  "backend": "heuristic_trained",
+  "feature_names": [
+    "texture_density",
+    "smoothness",
+    "entropy",
+    "saturation",
+    "channel_imbalance",
+    "edge_uniformity",
+    "blockiness"
+  ],
+  "weights": [
+    0.5521847728935794,
+    -0.685583614364344,
+    1.503105244387979,
+    4.2928641252404605,
+    -1.1454511016045712,
+    -1.266930178287074,
+    0.07223760283484898
+  ],
+  "bias": -2.8884547333163453
+}

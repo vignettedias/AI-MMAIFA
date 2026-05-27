@@ -1,0 +1,23 @@
+{
+  "model_name": "alexnet",
+  "backend": "heuristic_trained",
+  "feature_names": [
+    "texture_density",
+    "smoothness",
+    "entropy",
+    "saturation",
+    "channel_imbalance",
+    "edge_uniformity",
+    "blockiness"
+  ],
+  "weights": [
+    0.5549279339686556,
+    -0.6921173872381324,
+    1.5049554257393443,
+    4.291391218408228,
+    -1.1496101003364623,
+    -1.2611538315888098,
+    0.0760755616747908
+  ],
+  "bias": -2.8887117382025767
+}
